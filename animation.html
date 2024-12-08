@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Animation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff99cc, #c3c3f7, #ffcc99);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .balloons {
+            position: absolute;
+            top: 10%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .balloons i {
+            font-size: 50px;
+            color: #ffcc66;
+            animation: floatBalloons 6s ease-in-out infinite;
+        }
+
+        @keyframes floatBalloons {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        .snowflakes i {
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            animation: snowEffect 10s linear infinite;
+        }
+
+        @keyframes snowEffect {
+            0% {
+                top: -10%;
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                opacity: 0.5;
+            }
+        }
+
+        .snowflakes i:nth-child(odd) {
+            animation-duration: 12s;
+        }
+
+        .heart {
+            font-size: 60px;
+            color: #ff3366;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        button {
+            background-color: brown;
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-size: 16px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 45px;
+            }
+
+            .balloons i {
+                font-size: 40px;
+            }
+
+            .snowflakes i {
+                font-size: 20px;
+            }
+
+            .heart {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 35px;
+            }
+
+            .balloons i {
+                font-size: 35px;
+            }
+
+            .snowflakes i {
+                font-size: 18px;
+            }
+
+            .heart {
+                font-size: 45px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Love You Ma</h1>
+    <div class="balloons">
+        <i class="fa fa-gift"></i>
+        <i class="fa fa-gift"></i>
+        <i class="fa fa-gift"></i>
+    </div>
+
+    <div class="snowflakes">
+        <i class="fa fa-snowflake" style="left: 10%; animation-delay: 2s;"></i>
+        <i class="fa fa-snowflake" style="left: 30%; animation-delay: 3s;"></i>
+        <i class="fa fa-snowflake" style="left: 50%; animation-delay: 1s;"></i>
+        <i class="fa fa-snowflake" style="left: 70%; animation-delay: 4s;"></i>
+    </div>
+
+    <div class="heart">
+        <i class="fa fa-heart"></i>
+    </div>
+
+    <div>
+        <p>Happy Birthday to the Love of My Life!</p>
+    </div>
+
+    <button>
+        <a href="sharing.html">Our Beautiful Journey click here</a>
+    </button>
+
+</body>
+</html>

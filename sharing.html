@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Beautiful Story</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Center the content */
+        #password-container, #content {
+            text-align: center;
+            padding: 20px;
+            max-width: 90%;
+            width: 400px;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        }
+
+        #password-container input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #password-container button {
+            padding: 10px 20px;
+            background-color: #ff5c8d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #password-container button:hover {
+            background-color: #ff4081;
+        }
+
+        #content {
+            display: none;
+        }
+
+        pre {
+            max-width: 100%;
+            overflow-wrap: break-word;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: auto;
+            position: relative;
+            z-index: 10;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h3, h2 {
+            text-align: center;
+            color: #ffcc00;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ff5c8d;
+            animation: bounce 2s infinite;
+        }
+
+        /* Fade-in animation for text */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Bounce effect for text */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h3, h2 {
+                font-size: 1.25rem;
+            }
+
+            pre {
+                font-size: 14px;
+            }
+
+            #password-container {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h3, h2 {
+                font-size: 1rem;
+            }
+
+            pre {
+                font-size: 12px;
+            }
+
+            #password-container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            #password-container input {
+                width: 100%;
+            }
+
+            #password-container button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="password-container">
+        <h3>Please Enter Password</h3>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <div id="content">
+        <h3>Our Beautiful Story ma</h3>
+
+        <pre>
+            Hello Ma,
+
+            How are you? I hope you are feeling well. Wishing you many more happy returns
+            of the day, Ma.
+            
+            I still remember our first meeting, Ma. We met at MGBS bus stand. You waited for me 
+            for more than 2 hours because I got stuck in the bus.
+            We both were eagerly waiting to meet. When I landed at the bus stand, you looked at me 
+            and didn’t stop staring for even a minute. Your eyes said a lot that day. What you felt, I felt the same. 
+            We both had waited for a long time to meet after our distractions.
+
+            I saw the same Charan from our school days, the one who wanted to share everything 
+            with her Akii, every time.
+
+            <h3>Second Meet - Coffee Day</h3>
+
+            It wasn’t much, we just talked about our lives, and haha, it was a funny day.
+
+            After that, I didn’t meet you again. But you told me that if I am okay, we will marry.
+            After much confusion, I accepted it, though with many doubts. Because of that confusion,
+            I didn’t meet you much or chat with you, but you waited for me for more than 8 months and made me
+            feel comfortable with you. 
+
+            One day, you told me that you waited for me for many days, these 8 months, and since I’m here now,
+            you will wait for me even longer,
+            for my comfort, to talk and accept you.
+
+            Yes, finally, your girl came to know that he is mine. Until then, she didn’t know, and she treated you as a friend.
+            I’m so sorry for that. I always told you to wait because I wasn’t ready to marry or talk with you.
+
+            From day one, you made me realize that you were giving 100% effort to show your presence whenever I needed it. 
+
+            You know, Ma, when you see me like your daughter, I feel the same with you. Just pulling my cheeks and saying,
+            “You’re not my love; you’re my daughter” — this makes me feel loved 100 times more. You are the best 
+            gift to me, and you’ve held up to this promise until now.
+
+            Even when I was angry, upset, or frustrated, you never scolded me. You taught me
+            that I am your little girl. You made me realize that my approach was wrong. I listened to everything you said,
+            and now, my introvert self has become an extrovert, only with you.
+
+            You know, I don’t know everything, but you learned a lot to understand me and the world, 
+            
+            even things I didn’t know at that time, just for me. 
+
+            When you teach me something, I feel like you are my friend.
+
+            Haha, classmates, cycle mates, friends… >>> enemies… again friends… now one. 
+
+            What a plan, #GOD???
+
+            Yes, we are enjoying our lives happily. The day came when we discussed our two families,
+            but it didn’t work out, so we stopped thinking about it. We stopped because of the same village, 
+            the same families, and love marriage. But we didn’t fail to share our daily chit-chats.
+
+            Again, we brought our families into our lives. Yes, it’s going well so far.
+
+            Now, we’ve hit a broken stage. We added a lot of spice to our lives and started with 
+            one big step. We both got disturbed a lot, but we came out of that, though it still feels
+            difficult to talk on both sides. 
+
+            The two months were the worst days of our lives. You remember, Ma, the things I said to 
+            you, my thoughts were all about you. After everything I said, you swiped it out and didn’t
+            swear at me. That totally broke me.
+
+            But after that, you stood stand again and reminded me that this is our relationship. 
+            We started rebuilding ourselves.
+
+            Now, I was thinking about how I wanted our life to be, and you were the first person 
+            I wanted by my side, the person who meant the most to me. But then... you said you didn’t
+            want to talk much anymore. Yes, my heart didn’t accept it. My brain told me that you 
+            weren’t okay with certain situations.
+
+            I tried to understand, but it didn’t feel right. You took a stand again to talk to me,
+            and we started rebuilding once again.
+
+            Time became a support for both of us, but you said, “I’m fighting for time.” 
+            I fought for time too, but you didn’t understand that. 
+
+            Ma, I went to Bangalore and wasn’t feeling well. I pinged you with a simple "Hi," 
+            and you replied. But when I asked you why you didn’t message me,  
+            "I feel you only because I’m not feeling good.” 
+
+            That day I remember, Ma. It felt like my last day with you. I cried a lot, sitting there,
+            hearing your words about me. I know you’ve changed, and my heart accepted it, because i know ma 
+            he is not my man he is someone i know the person who loves me alot  telling me not to cry. I felt like no one would be there with me.
+            after crying a lot my eyes swell like baloons one person called my parents high fever 
+            iam not able to open my eyes i suffered and depressed a lot 
+            my father came and pick up i took biggest decision next day if i wake up i have to
+            wake up without your thoughts i realised not intrested to talk with me now 
+            not to see anymore after hearing all the words from you totally stopped even
+            iam saying  let him go don't go 
+            to his life again 
+
+            it never stopped one time chepali ante ma inka neto matldali antene naku bayam vesindi 
+            anta stage ki vacheasanu 
+            because i know you are not the person who I know you are not the person who loves me 
+            more than anyone in his life and he know me well 
+
+            she is the girl never tried to talk shut even you don't now you crossed everything 
+            totally the day is last day 
+
+            neku okati chepana ma 
+
+            nijamaina friendship enti nijamaina love enti anni neku telsela chesindi nenu 
+            iam the one who stayed with you at your lowest times 
+            i accepted your insecurities 
+            at the end ..... all my fault
+
+            But you never gave up on our relationship. Even though I fought, and you fought, 
+            you were the one who took a stand to save our relationship, Ma.
+
+            The next evening, what you said to me gave me hope to restart. 
+
+            After I opened my WhatsApp and saw your messages.
+
+            <h2>Ma,  Nana Vachadu, Mali Ninnu Baga Choosukuntadu Isari</h2>
+
+            If you were with me that day, I would have hugged you and asked,
+            "Where did you go? Why did you leave me like this? I have so many questions.”
+
+            Those words gave me hope to restart with you, Ma. Until now, you are the same person
+            I know. I’m sorry, Ma, for making you suffer iam so sorry ma. 
+
+            We started understanding ourselves. Now we’ve rebuilt with a stronger foundation,
+            not involving anyone else in our relationship. We’ve learned a lot from our failures.
+            This was a big test for us, but yes, we came out stronger. Now, we’re together.
+
+            You are the only one in my world now. Love you so much, Ma. In our life, 
+            no disturbances should come again. If they do, we will resolve them without letting them
+            exceed our limits. I promise you, until my last breath, I will be with you.
+
+            Now, if anyone asks me anything, I just say, "He will take care." 
+            I don’t want to overthink it. Thanks for being with me all the time.
+
+            I realised how much importance i have in your life only i know what my person is 
+            only i know what the person you are 
+            
+
+            Happy Birthday to my love.
+        </pre>
+    </div>
+
+    <script>
+        // Password Protection Script
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            const correctPassword = "charanaki"; // Set your desired password here
+
+            if (password === correctPassword) {
+                document.getElementById("password-container").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
